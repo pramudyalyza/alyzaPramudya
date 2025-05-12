@@ -27,7 +27,7 @@ export default function Projects() {
       id: 3,
       title: "Dog Breed Classifierz",
       description: "A Streamlit web app that predicts the dog breed from an image (upload, camera, url) using a fine-tuned AlexNet model. Supports 10 dog breeds: Beagle, Chihuahua, Corgi, Dalmation, Doberman, Golden Retriever, Maltese, Poodle, Shiba Inu, and Siberian Husky.",
-      image: "/dogBreedClassifierz.jpg",
+      image: "/DogBreedClassifierz.jpg",
       github: "https://github.com/pramudyalyza/dogBreedClassifierz",
       demo: "http://dogbreedclassifierz.streamlit.app/",
       presentation: "https://drive.google.com/file/d/1jZEHkyWy7iQkgJOZ4ZLtDZ_HLE9ZF5EM/view?usp=drive_link",
