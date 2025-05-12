@@ -30,7 +30,7 @@ export default function HonorsAwards() {
         <strong>Successfully completed</strong> 8 projects and 1 final project as practical implementations of these skills.
       </>
     ),
-    image: "/masteringAi.jpg",
+    image: "/masteringAI.jpg",
   },
 ]
 
