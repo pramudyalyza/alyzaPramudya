@@ -88,7 +88,7 @@ export default function Hero() {
           </motion.h2>
 
           <motion.h1 className="text-xl md:text-xl text-foreground">
-            I'm a tech enthusiast who's worn many hats — but whatever I do, I make data work smarter.
+            I'm a tech enthusiast who's worn many hats but whatever I do, I make data work smarter.
           </motion.h1>
 
           <motion.p className="text-base md:text-lg text-muted-foreground">
@@ -101,7 +101,7 @@ export default function Hero() {
               className="bg-primary text-primary-foreground hover:bg-primary/90"
             >
               <a
-                href="https://docs.google.com/document/d/1MwLkuzBK4H4tvrNc-Q2acK--5zPrUaMB/export?format=pdf"
+                href="https://drive.google.com/uc?export=download&id=1VTq0wJJQKlkIsFSOAHFM144mAcRwlUjA"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Alyza Pramudya-CV.pdf"
@@ -121,10 +121,6 @@ export default function Hero() {
         >
           <ChevronDown className="h-10 w-10 text-foreground mx-auto" />
         </motion.div>
-
-        <motion.p className="absolute bottom-2 left-0 right-0 text-center text-xs text-muted-foreground">
-          scroll down to decode me
-        </motion.p>
 
       </div>
     </section>

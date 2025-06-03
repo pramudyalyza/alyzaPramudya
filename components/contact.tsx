@@ -115,7 +115,7 @@ export default function Contact() {
                 <MapPin className="h-5 w-5 text-primary mt-0.5" />
                 <div>
                   <h3 className="font-medium">Location</h3>
-                  <p className="text-muted-foreground">North Jakarta, Indonesia</p>
+                  <p className="text-muted-foreground">Bandung, West Java, Indonesia</p>
                 </div>
               </div>
 
@@ -140,7 +140,7 @@ export default function Contact() {
                   >
                     <Github className="h-5 w-5" />
                   </Link>
-                  <Link
+                  {/* <Link
                     href="https://medium.com/@alyzapramudya"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -148,7 +148,7 @@ export default function Contact() {
                     aria-label="Medium Profile"
                   >
                     <FileText className="h-5 w-5" />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </CardContent>

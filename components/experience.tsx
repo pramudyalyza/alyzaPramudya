@@ -14,12 +14,12 @@ export default function Experience() {
     {
       id: 1,
       title: "Data Intelligence Intern",
-      company: "PT Astra International Tbk",
-      period: "Mar 2025 - Present",
+      company: "PT Astra International Tbk - Function Group Digital Strategy",
+      period: "Mar 2025 - May 2025",
       description:
-        "As a Data Intelligence Intern, I explored how data powers business decisions—through real projects, cross-functional learning, and a mix of tech and strategy.",
+        "As a Data Intelligence Intern at PT Astra International, I supported several projects and learned about the team’s end-to-end workflows.",
       longDescription:
-        "As a Data Intelligence Intern, I explored how data powers business decisions—through real projects, cross-functional learning, and a mix of tech and strategy.\n\n1. Joined in-class training sessions to understand the team's workflow—covering data products, engineering, governance, experimentation, and business intelligence.\n2. Contributed to SPLASH, a platform that helps businesses spot promising regions to expand into across Indonesia. I researched potential industries, sourced and analyzed datasets, built time series models, and visualized results using Power BI.\n3. Developed a Product Knowledge Chatbot for Astra Digital's website to answer questions about our services (especially Data Intelligence), and built a dashboard to track its performance.",
+        "As a Data Intelligence Intern at PT Astra International, I supported several projects and learned about the team’s end-to-end workflows.\n\n1. Joined in-class training sessions to understand the team's workflow—covering data products, engineering, governance, experimentation, and business intelligence.\n2. Contributed to SPLASH, a platform that helps businesses spot promising regions to expand into across Indonesia. I researched potential industries, sourced and analyzed datasets, built time series models, and visualized results using Power BI.\n3. Developed a Product Knowledge Chatbot for Astra Digital's website to answer questions about our services (especially Data Intelligence), and built a dashboard to track its performance.",
       image: "/ai.png",
     },
     {
@@ -28,9 +28,9 @@ export default function Experience() {
       company: "NTT Ltd.",
       period: "Feb 2024 - Feb 2025",
       description:
-        "Responsibilities:\n1. Explored data processing technologies, including Microsoft Fabric, Talend, Informatica and studied data engineering concepts such as Slowly Changing Dimension (SCD)",
+        "As a Data Engineer Intern at NTT Indonesia Technology, I focused on learning modern data engineering tools and concepts while supporting the team through research and documentation tasks.",
       longDescription:
-        "Responsibilities:\n1. Explored data processing technologies, including Microsoft Fabric, Talend, Informatica and studied data engineering concepts such as Slowly Changing Dimension (SCD) and Change Data Capture (CDC) to deepen understanding of modern data engineering workflows and data management best practices.\n2. Assisted the team in preparing technical presentations and documentation related to data solutions.\n3. Supported the presales team by contributing to materials for data solution proposals to clients.",
+        "As a Data Engineer Intern at NTT Indonesia Technology, I focused on learning modern data engineering tools and concepts while supporting the team through research and documentation tasks.\n\n1. Explored data processing technologies, including Microsoft Fabric, Talend, Informatica and studied data engineering concepts such as Slowly Changing Dimension (SCD) and Change Data Capture (CDC) to deepen understanding of modern data engineering workflows and data management best practices.\n2. Assisted the team in preparing technical presentations and documentation related to data solutions.\n3. Supported the presales team by contributing to materials for data solution proposals to clients.",
       image: "/ntt.png",
     },
     {
@@ -109,7 +109,7 @@ export default function Experience() {
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                         <div>
-                          <CardTitle>{exp.title}</CardTitle>
+                          <CardTitle className="mb-1">{exp.title}</CardTitle>
                           <CardDescription>
                             {exp.company} • {exp.period}
                           </CardDescription>
@@ -125,7 +125,7 @@ export default function Experience() {
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="mt-2 flex items-center gap-1"
+                        className="mt-2 flex items-center gap-1 pl-0 justify-start"
                         onClick={() => toggleShowMore(exp.id)}
                       >
                         {showMore[exp.id] ? (
