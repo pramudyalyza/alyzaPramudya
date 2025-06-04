@@ -78,7 +78,7 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 z-10 text-center">
         <motion.div
-          className="max-w-3xl mx-auto space-y-6"
+          className="max-w-4xl mx-auto space-y-6"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -88,11 +88,11 @@ export default function Hero() {
           </motion.h2>
 
           <motion.h1 className="text-xl md:text-xl text-foreground">
-            I'm a tech enthusiast who's worn many hats but whatever I do, I make data work smarter.
+            I'm a tech enthu who's worn many hats but whatever I do, I make data work smarter
           </motion.h1>
 
           <motion.p className="text-base md:text-lg text-muted-foreground">
-            From analytics to automation, I turn complexity into clarity. <br /> Feel free to explore my work and let's see where data can take us 🚀
+            Feel free to explore my work and let's see where data can take us 🚀
           </motion.p>
 
           <motion.div variants={childVariants}>

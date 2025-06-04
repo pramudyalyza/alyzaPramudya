@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, ExternalLink, FileIcon as FilePresentation, ChevronLeft, ChevronRight } from "lucide-react"
+import { Github, ExternalLink, FileIcon as FilePresentation, ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from "lucide-react"
 
 export default function Projects() {
   const projects = [
@@ -21,7 +21,7 @@ export default function Projects() {
     {
       id: 2,
       title: "Prompt & Prejudice",
-      description: "Prompt & Prejudice is my little romance prompt potion. Just toss in two names, a vibe, and a setting — or hit random and let the universe cook. You'll get a dreamy story idea brewed just for you",
+      description: "Prompt & Prejudice creates dreamy romance ideas—just input names, a vibe, and setting, or go random for a universe-crafted love story.",
       image: "/promptprejudice.jpg",
       github: "https://github.com/pramudyalyza/prompt-and-prejudice",
       demo: "https://drive.google.com/file/d/1DOFzRS4z89vLvQ-4CyoTVETf0SkVShYI/view?usp=drive_link",
@@ -30,7 +30,7 @@ export default function Projects() {
     {
       id: 3,
       title: "Dog Breed Classifierz",
-      description: "A Streamlit web app that predicts the dog breed from an image (upload, camera, url) using a fine-tuned AlexNet model. Supports 10 predifined dog breeds.",
+      description: "A web app that predicts dog breeds from images using a fine-tuned AlexNet. Upload, use camera, or URL. Supports 10 predefined breeds.",
       image: "/DogBreedClassifierz.jpg",
       github: "https://github.com/pramudyalyza/dogBreedClassifierz",
       demo: "http://dogbreedclassifierz.streamlit.app/",
@@ -39,7 +39,7 @@ export default function Projects() {
     {
       id: 4,
       title: "IKN Sentiment App",
-      description: "A simple tool that tracks public sentiment on Indonesia's new capital. It automatically collects YouTube comments, cleans the data, and uses ML to predict the sentiment. Users can view daily update sentiment trends through a dashboard or input text for instant sentiment predictions.",
+      description: "A sentiment tracker for Indonesia’s new capital using ML on YouTube comments. View daily trends or test your own text.",
       image: "/iknSentiment.jpg",
       github: "http://github.com/pramudyalyza/IKN-SentimentApp",
       demo: "http://iknsentimentapp.streamlit.app/",
@@ -48,7 +48,7 @@ export default function Projects() {
     {
       id: 5,
       title: "Frezz : Fruit Freshness Detector",
-      description: "Frezz is a fruit freshness detection tool which is expected to help fruit farmers and supermarket employees to carry out quality control on fruit that will be sold to customers, especially apples, bananas and oranges.",
+      description: "Frezz detects fruit freshness to assist farmers and supermarket staff in quality control, focusing on apples, bananas, and oranges.",
       image: "/frezz.png",
       github: "https://github.com/pramudyalyza/frezz",
       demo: null,
@@ -57,7 +57,7 @@ export default function Projects() {
     {
       id: 6,
       title: "Covid-19 in US: Weather & Socioeconomic Factors",
-      description: "This project aims to analyze the impact of weather and socioeconomic factors on COVID-19 cases in the United States. In addition, I also developed a comprehensive interactive dashboard to visualize the findings.",
+      description: "Analyzed how weather and socioeconomic factors affect U.S. COVID-19 cases, supported by an interactive dashboard to visualize key insights.",
       image: "/covid.png",
       github: "https://github.com/pramudyalyza/COVID19_in_US_Weather_Socioeconomic_Factors",
       demo: "https://bit.ly/AlyzaProject02-Tableau",
@@ -66,7 +66,7 @@ export default function Projects() {
     {
       id: 7,
       title: "Urban Visual Pollutants Detection",
-      description: "This project aims to develop a system to detect and classify urban visual pollutants in images. The system is trained on a dataset of images of urban visual pollutants, including graffiti, faded signage, etc.",
+      description: "Built a system to detect and classify urban visual pollutants in images, using a dataset featuring graffiti, faded signage, and more.",
       image: "/urban.png",
       github: "https://github.com/pramudyalyza/Urban-Visual-Pollutants-Detection/tree/main",
       demo: null,
@@ -75,7 +75,7 @@ export default function Projects() {
     {
       id: 8,
       title: "WHO: Life Expectancy Analysis",
-      description: "This project aims to explore and analyze the Life Expectancy dataset from Kaggle to identify factors influencing life expectancy and develop a predictive model to predict life expectancy using a Random Forest model. ",
+      description: "Explored Kaggle’s Life Expectancy dataset to identify key factors and built a predictive model using Random Forest.",
       image: "/who.png",
       github: "https://github.com/pramudyalyza/WHO-LifeExpectancyAnalysis",
       demo: "https://bit.ly/AlyzaProject04-Tableau",
@@ -84,7 +84,7 @@ export default function Projects() {
     {
       id: 9,
       title: "News Category Classification",
-      description: "The aim of this project is text classification, specifically for news articles in Indonesian. The project involves scraping text data from four news outlets in Indonesia: Kompas, Pikiran Rakyat, Tribunnews, and Merdeka.",
+      description: "Classifies Indonesian news articles using scraped data from Kompas, Pikiran Rakyat, Tribunnews, and Merdeka.",
       image: "/news.png",
       github: "https://github.com/pramudyalyza/News-Category-Classification/tree/main",
       demo: null,
@@ -93,7 +93,7 @@ export default function Projects() {
     {
       id: 10,
       title: "Jakarta Air Quality Classification",
-      description: "This project aims to create a model that can predict future air pollution levels. Thus, it can help the government and related agencies in analyzing the factors that affect Jakarta's air quality.",
+      description: "A model forecasting Jakarta’s air pollution to support government analysis of air quality factors.",
       image: "/airQuality.png",
       github: "https://github.com/pramudyalyza/Jakarta-Air-Quality-Classification",
       demo: null,
@@ -102,7 +102,7 @@ export default function Projects() {
     {
       id: 11,
       title: "Diabetes Classification & Regression",
-      description: "This project focuses on classifying the diabetes outcome and predicting the value of diabetes pedigree function. The dataset includes information like the number of pregnancies, blood glucose level, etc.",
+      description: "A model to classify diabetes outcome and predict pedigree function using key health indicators like glucose and pregnancies.",
       image: "/diabetes.png",
       github: "https://github.com/pramudyalyza/Diabetes-Classification-Regression",
       demo: null,
@@ -111,7 +111,7 @@ export default function Projects() {
     {
       id: 12,
       title: "Telco Customer Churn Prediction",
-      description: "This project aims to develop a predictive model to predict customer churn in Telco company, which will help us identify customers who are likely to leave the company.",
+      description: "Developed a predictive model to identify Telco customers likely to churn, helping reduce customer loss.",
       image: "/telco.png",
       github: "https://github.com/pramudyalyza/TelcoCustomerChurn_R",
       demo: null,
@@ -164,16 +164,44 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
 
-        <div className="flex items-center justify-between w-full">
-          {/* Left Button */}
+        {/* Mobile Navigation Buttons - Above Cards */}
+        <div className="md:hidden flex justify-center mb-6 space-x-4">
           <button
             onClick={handlePrev}
             disabled={currentIndex === 0}
             className={cn(
-              "p-2 rounded-full bg-primary text-muted shadow transition hover:bg-muted/80 flex-shrink-0",
-              currentIndex === 0 && "opacity-30 cursor-not-allowed"
+              "px-4 py-1 rounded bg-primary text-muted transition text-sm font-medium shadow border border-border",
+              currentIndex === 0
+                ? "opacity-20 cursor-not-allowed"
+                : "hover:bg-primary"
+            )}
+          >
+            ← Prev
+          </button>
+          <button
+            onClick={handleNext}
+            disabled={currentIndex + projectsPerPage >= projects.length}
+            className={cn(
+              "px-4 py-1 rounded bg-primary text-muted transition text-sm font-medium shadow border border-border",
+              currentIndex + projectsPerPage >= projects.length
+                ? "opacity-20 cursor-not-allowed"
+                : "hover:bg-primary"
+            )}
+          >
+            → Next
+          </button>
+        </div>
+
+        <div className="flex items-center justify-between w-full">
+          {/* Left Button - Desktop Only */}
+          <button
+            onClick={handlePrev}
+            disabled={currentIndex === 0}
+            className={cn(
+              "hidden md:flex p-2 rounded-full bg-primary text-muted shadow transition hover:bg-primary/80 flex-shrink-0",
+              currentIndex === 0 && "opacity-20 cursor-not-allowed"
             )}
           >
             <ChevronLeft className="w-5 h-5" />
@@ -183,7 +211,7 @@ export default function Projects() {
           <div className="flex-1 mx-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
               {visibleProjects.map((project) => (
-                <Card key={project.id} className="overflow-hidden flex flex-col h-full bg-muted">
+                <Card key={project.id} className="overflow-hidden flex flex-col h-full bg-muted relative">
                   <div className="relative h-48">
                     <Image
                       src={project.image || "/placeholder.svg"}
@@ -224,7 +252,7 @@ export default function Projects() {
                     {project.demo && (
                       <Link
                         href={project.demo}
-                        className="w-8 h-8 flex items-center justify-center rounded-full bg-white text-muted shadow hover:shadow-md transition"
+                        className="w-8 h-8 flex items-center justify-center rounded-full bg-primary text-muted shadow hover:shadow-md transition"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Live demo for ${project.title}`}
@@ -238,13 +266,13 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Right Button */}
+          {/* Right Button - Desktop Only */}
           <button
             onClick={handleNext}
             disabled={currentIndex + projectsPerPage >= projects.length}
             className={cn(
-              "p-2 rounded-full bg-primary text-muted shadow transition hover:bg-muted/80 flex-shrink-0",
-              currentIndex + projectsPerPage >= projects.length && "opacity-30 cursor-not-allowed"
+              "hidden md:flex p-2 rounded-full bg-primary text-muted shadow transition hover:bg-primary/80 flex-shrink-0",
+              currentIndex + projectsPerPage >= projects.length && "opacity-20 cursor-not-allowed"
             )}
           >
             <ChevronRight className="w-5 h-5" />

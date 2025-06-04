@@ -14,27 +14,16 @@ export default function Experience() {
     {
       id: 1,
       title: "Data Intelligence Intern",
-      company: "PT Astra International Tbk - Function Group Digital Strategy",
+      company: "PT Astra International Tbk",
       period: "Mar 2025 - May 2025",
       description:
-        "As a Data Intelligence Intern at PT Astra International, I supported several projects and learned about the team’s end-to-end workflows.",
+        "As a Data Intelligence Intern at PT Astra International Tbk - Function Group Digital Strategy, I supported several projects and learned about the team's end-to-end workflows.",
       longDescription:
-        "As a Data Intelligence Intern at PT Astra International, I supported several projects and learned about the team’s end-to-end workflows.\n\n1. Joined in-class training sessions to understand the team's workflow—covering data products, engineering, governance, experimentation, and business intelligence.\n2. Contributed to SPLASH, a platform that helps businesses spot promising regions to expand into across Indonesia. I researched potential industries, sourced and analyzed datasets, built time series models, and visualized results using Power BI.\n3. Developed a Product Knowledge Chatbot for Astra Digital's website to answer questions about our services (especially Data Intelligence), and built a dashboard to track its performance.",
+        "As a Data Intelligence Intern at PT Astra International Tbk - Function Group Digital Strategy, I supported several projects and learned about the team's end-to-end workflows.\n\n1. Joined in-class training sessions to understand the team's workflow—covering data products, engineering, governance, experimentation, and business intelligence.\n2. Contributed to SPLASH, a platform that helps businesses spot promising regions to expand into across Indonesia. I researched potential industries, sourced and analyzed datasets, built time series models, and visualized results using Power BI.\n3. Developed a Product Knowledge Chatbot for Astra Digital's website to answer questions about our services (especially Data Intelligence), and built a dashboard to track its performance.",
       image: "/ai.png",
     },
     {
       id: 2,
-      title: "Data Engineer Intern",
-      company: "NTT Ltd.",
-      period: "Feb 2024 - Feb 2025",
-      description:
-        "As a Data Engineer Intern at NTT Indonesia Technology, I focused on learning modern data engineering tools and concepts while supporting the team through research and documentation tasks.",
-      longDescription:
-        "As a Data Engineer Intern at NTT Indonesia Technology, I focused on learning modern data engineering tools and concepts while supporting the team through research and documentation tasks.\n\n1. Explored data processing technologies, including Microsoft Fabric, Talend, Informatica and studied data engineering concepts such as Slowly Changing Dimension (SCD) and Change Data Capture (CDC) to deepen understanding of modern data engineering workflows and data management best practices.\n2. Assisted the team in preparing technical presentations and documentation related to data solutions.\n3. Supported the presales team by contributing to materials for data solution proposals to clients.",
-      image: "/ntt.png",
-    },
-    {
-      id: 3,
       title: "Digital Project Consultant",
       company: "PT Astra International Tbk - TSO Auto2000",
       period: "Jun 2024 - Nov 2024",
@@ -43,6 +32,17 @@ export default function Experience() {
       longDescription:
         "As part of the Astra1st program, I was placed in the Digital Product Department of PT Astra International Tbk - TSO Auto2000, one of Indonesia's largest Toyota dealerships.\n\nResponsibilities:\n1. Conducted in-depth immersion sessions with Business Users to understand their job processes in detail by mapping end-to-end workflows, identifying data sources, and analyzing tools and applications in use.\n2. Assessed workflows to determine the feasibility of automation. This involved Identifying and evaluating parts of the process that could be automated or confirming if a process was entirely infeasible for automation.\n3. Developed automation scripts using UiPath, ensuring they met technical standards and business requirements.\n4. Worked closely with Business Users to test the automation scripts, ensuring they worked correctly, produced accurate results, and met their expectations. Gathered feedback to make adjustments if needed.\n5. Deployed automation scripts and implemented scheduling mechanisms to ensure seamless operation without manual intervention.\n6. Monitored and evaluated the performance of deployed automation scripts, ensuring they ran well.\n7. Designed and developed Power BI dashboards to present data from automated processes in an accessible and user-friendly format.\n\nProjects:\n1. Automated 6 processes across 2 departments and led 2 of the projects. Delivered a 94% improvement in time efficiency, significantly reducing manual effort and enhancing productivity. [Group Projects]\n2. Designed and developed 6 interactive Power BI dashboards as an end product of the RPA solution to support strategic decision-making through clear visualizations.\n3. Developed automation scripts to streamline the generation of trend discount reports and performance reports for Ruang Kompetensi, reducing manual effort and ensuring consistent accuracy. [Individual Projects]",
       image: "/a2k.png",
+    },
+    {
+      id: 3,
+      title: "Data Engineer Intern",
+      company: "NTT Ltd.",
+      period: "Feb 2024 - Feb 2025",
+      description:
+        "As a Data Engineer Intern at NTT Indonesia Technology, I focused on learning modern data engineering tools and concepts while supporting the team through research and documentation tasks.",
+      longDescription:
+        "As a Data Engineer Intern at NTT Indonesia Technology, I focused on learning modern data engineering tools and concepts while supporting the team through research and documentation tasks.\n\n1. Explored data processing technologies, including Microsoft Fabric, Talend, Informatica and studied data engineering concepts such as Slowly Changing Dimension (SCD) and Change Data Capture (CDC) to deepen understanding of modern data engineering workflows and data management best practices.\n2. Assisted the team in preparing technical presentations and documentation related to data solutions.\n3. Supported the presales team by contributing to materials for data solution proposals to clients.",
+      image: "/ntt.png",
     },
     {
       id: 4,
