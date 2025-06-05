@@ -10,7 +10,7 @@ export default function Publications() {
       authors: "A. R. Pramudya, S. A. Qonitatin, and J. Budi",
       journal: "International Conference on Computer Sciences, Engineering, and Technology Innovation (ICoCSETI)",
       year: "2025",
-      link: "https://drive.google.com/file/d/1Rn2_TEtyoTx68vlRxhaZyy5Njqb1NukM/view?usp=sharing",
+      link: "https://ieeexplore.ieee.org/document/11020119",
     },
     {
       id: 2,
