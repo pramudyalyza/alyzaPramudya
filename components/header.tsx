@@ -5,6 +5,7 @@ import Link from "next/link"
 import ThemeToggle from "./theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -34,7 +35,14 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="#home" className="text-xl font-bold">
-          Alyza Pramudya
+            <Image
+              src="/alyzaLogo.png"
+              alt="Alyza Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+              priority
+            />
         </Link>
 
         {/* Mobile menu button */}
@@ -51,7 +59,7 @@ export default function Header() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-primary hover:text-foreground transition-colors"
               onClick={(e) => {
                 e.preventDefault()
                 const element = document.querySelector(link.href)
