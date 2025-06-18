@@ -5,11 +5,19 @@ import Link from "next/link"
 import ThemeToggle from "./theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { useTheme } from "next-themes"
 import Image from "next/image"
+
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+      setMounted(true)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,14 +43,16 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="#home" className="text-xl font-bold">
+          {mounted && (
             <Image
-              src="/alyzaLogo.png"
+              src={resolvedTheme === "dark" ? "/alyzaLogoDark.png" : "/alyzaLogoLight.png"}
               alt="Alyza Logo"
               width={40}
               height={40}
               className="object-contain"
               priority
             />
+          )}
         </Link>
 
         {/* Mobile menu button */}
