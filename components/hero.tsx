@@ -28,7 +28,7 @@ export default function Hero() {
 
   return (
     <AuroraBackground id="home">
-      <div className="container relative mx-auto px-4 text-center">
+      <div className="container relative mx-auto px-6 text-center">
         <motion.div
           className="max-w-4xl mx-auto space-y-6"
           variants={containerVariants}
@@ -44,18 +44,10 @@ export default function Hero() {
 
           <motion.h1
             variants={childVariants}
-            className="text-xl text-foreground md:text-xl"
+            className="text-xl text-muted-foreground md:text-xl"
           >
-            I'm a tech enthu who's worn many hats but whatever I do, I make data
-            work smarter
+            I'm a tech enthu who's worn several hats but whatever I do, <br></br> I make data work smarter
           </motion.h1>
-
-          <motion.p
-            variants={childVariants}
-            className="text-base text-muted-foreground md:text-lg"
-          >
-            Feel free to explore my work and let's see where data can take us 🚀
-          </motion.p>
 
           <motion.div variants={childVariants}>
             <Button
