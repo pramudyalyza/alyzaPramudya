@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "pnpm install --ignore-scripts=false --foreground-scripts sharp"
+    "postinstall": "pnpm rebuild sharp"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
