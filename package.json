@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "pnpm rebuild sharp"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
@@ -66,7 +65,7 @@
     "tsparticles": "^3.8.1",
     "vaul": "^0.9.6",
     "zod": "^3.24.1",
-    "sharp": "^0.32.6"
+    "sharp": "^0.34.2"
   },
   "devDependencies": {
     "@types/node": "^22",
