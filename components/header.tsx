@@ -6,7 +6,7 @@ import ThemeToggle from "./theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { useTheme } from "next-themes"
-import Image from "next/image"
+// import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { toast } from "sonner"
 import { useRouter } from "next/navigation"
@@ -55,13 +55,12 @@ export default function Header() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold">
           {mounted && (
-            <Image
+            <img
               src={resolvedTheme === "dark" ? "/alyzaLogoDark.png" : "/alyzaLogoLight.png"}
               alt="Alyza Logo"
               width={40}
               height={40}
               className="object-contain"
-              priority
             />
           )}
         </Link>
