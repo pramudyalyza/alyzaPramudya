@@ -51,7 +51,7 @@ export default function AboutMe() {
             <div className="relative w-full max-w-xs aspect-square rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/alyzaPasFoto.JPG"
-                alt="Alyza Pramudya"
+                alt="Alyza Pramudya Profile Picture"
                 fill
                 className="object-cover"
                 priority
