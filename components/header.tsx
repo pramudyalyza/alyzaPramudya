@@ -7,6 +7,9 @@ import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { useTheme } from "next-themes"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
+import { toast } from "sonner"
+import { useRouter } from "next/navigation"
 
 
 export default function Header() {
@@ -14,6 +17,13 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
+
+  const handleStartChat = () => {
+    toast.info("Taking you to the chatbot. Please wait a moment...");
+    router.push("/chatbot");
+  }
 
   useEffect(() => {
       setMounted(true)
@@ -33,6 +43,7 @@ export default function Header() {
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
+    { name: "Chatbot", href: "/chatbot" },
   ]
 
   return (
@@ -42,7 +53,7 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="#home" className="text-xl font-bold">
+        <Link href="/" className="text-xl font-bold">
           {mounted && (
             <Image
               src={resolvedTheme === "dark" ? "/alyzaLogoDark.png" : "/alyzaLogoLight.png"}
@@ -65,23 +76,37 @@ export default function Header() {
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-primary hover:text-foreground transition-colors"
-              onClick={(e) => {
-                e.preventDefault()
-                const element = document.querySelector(link.href)
-                if (element) {
-                  element.scrollIntoView({ behavior: "smooth" })
-                }
-                setIsMenuOpen(false)
-              }}
-            >
-              {link.name}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+
+            if (link.href === '/chatbot' && pathname === '/chatbot') {
+              return null;
+            }
+
+            const isAnchor = link.href.startsWith('#');
+            
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-primary hover:text-foreground transition-colors"
+                onClick={(e) => {
+                  if (isAnchor) {
+                    if (pathname === '/') {
+                      e.preventDefault();
+                      const element = document.querySelector(link.href);
+                      if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                      }
+                    } else if (pathname === '/chatbot') {
+                      handleStartChat();
+                    }
+                  }
+                  setIsMenuOpen(false);
+                }}
+              >
+                {link.name}
+              </Link>
+          )})}
           <ThemeToggle />
         </nav>
 
@@ -89,23 +114,37 @@ export default function Header() {
         {isMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-background shadow-lg md:hidden">
             <nav className="flex flex-col p-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="py-2 text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    const element = document.querySelector(link.href)
-                    if (element) {
-                      element.scrollIntoView({ behavior: "smooth" })
-                    }
-                    setIsMenuOpen(false)
-                  }}
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                if (link.href === '/chatbot' && pathname === '/chatbot') {
+                  return null;
+                }
+
+                const isAnchor = link.href.startsWith('#');
+                
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className="text-primary hover:text-foreground transition-colors"
+                    onClick={(e) => {
+                      if (isAnchor) {
+                        if (pathname === '/') {
+                          e.preventDefault();
+                          const element = document.querySelector(link.href);
+                          if (element) {
+                            element.scrollIntoView({ behavior: "smooth" });
+                          }
+                        } else if (pathname === '/chatbot') {
+                          handleStartChat(); // manually trigger if you're not navigating
+                        }
+                      }
+                      setIsMenuOpen(false);
+                    }}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
             </nav>
           </div>
         )}
