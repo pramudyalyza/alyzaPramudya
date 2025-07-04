@@ -11,6 +11,14 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: "AskToAl",
+      description: "AskToAl is a client-side AI chatbot for my portfolio website that provides instant answers via fine-tuned Sentence Transformers",
+      image: "/asktoal.png",
+      demo: "https://pramudyalyza.vercel.app/chatbot",
+      presentation: null,
+    },
+    {
+      id: 2,
       title: "DearCSV",
       description: "DearCSV is a simple app that lets users chat with their CSV data using an LLM",
       image: "/DearCSV.jpg",
@@ -19,7 +27,7 @@ export default function Projects() {
       presentation: null,
     },
     {
-      id: 2,
+      id: 3,
       title: "Ask Me Girl!",
       description: "Ask Me Girl! is a sassy AI bestie who reads your PDFs and spills the tea so you don't have to.",
       image: "/askmegirl.jpg",
@@ -28,7 +36,7 @@ export default function Projects() {
       presentation: null,
     },
     {
-      id: 3,
+      id: 4,
       title: "Prompt & Prejudice",
       description: "Prompt & Prejudice creates dreamy romance ideas—just input names, a vibe, and setting, or go random for a universe-crafted love story.",
       image: "/promptprejudice.jpg",
@@ -37,7 +45,7 @@ export default function Projects() {
       presentation: null,
     },
     {
-      id: 4,
+      id: 5,
       title: "Dog Breed Classifierz",
       description: "A web app that predicts dog breeds from images using a fine-tuned AlexNet. Upload, use camera, or URL. Supports 10 predefined breeds.",
       image: "/DogBreedClassifierz.jpg",
@@ -46,7 +54,7 @@ export default function Projects() {
       presentation: "https://drive.google.com/file/d/1jZEHkyWy7iQkgJOZ4ZLtDZ_HLE9ZF5EM/view?usp=drive_link",
     },
     {
-      id: 5,
+      id: 6,
       title: "IKN Sentiment App",
       description: "A sentiment tracker for Indonesia’s new capital using ML on YouTube comments. View daily trends or test your own text.",
       image: "/iknSentiment.jpg",
@@ -55,7 +63,7 @@ export default function Projects() {
       presentation: "https://drive.google.com/drive/folders/1YuHREcAEAMtEOJmNJYfL5YIjLHGKKHTw?usp=drive_link",
     },
     {
-      id: 6,
+      id: 7,
       title: "Frezz : Fruit Freshness Detector",
       description: "Frezz detects fruit freshness to assist farmers and supermarket staff in quality control, focusing on apples, bananas, and oranges.",
       image: "/frezz.png",
@@ -64,7 +72,7 @@ export default function Projects() {
       presentation: "https://drive.google.com/file/d/1vHnm6AyTlvJx61R6J-uQyzNDE3RgtBoC/view?usp=drive_link",
     },
     {
-      id: 7,
+      id: 8,
       title: "Covid-19 in US: Weather & Socioeconomic Factors",
       description: "Analyzed how weather and socioeconomic factors affect U.S. COVID-19 cases, supported by an interactive dashboard to visualize key insights.",
       image: "/covid.png",
@@ -73,7 +81,7 @@ export default function Projects() {
       presentation: "https://drive.google.com/file/d/1P_2zLRi4VjabM4zxgM5g5A-pAzT90SUu/view?usp=drive_link",
     },
     {
-      id: 8,
+      id: 9,
       title: "Urban Visual Pollutants Detection",
       description: "Built a system to detect and classify urban visual pollutants in images, using a dataset featuring graffiti, faded signage, and more.",
       image: "/urban.png",
@@ -82,7 +90,7 @@ export default function Projects() {
       presentation: "https://drive.google.com/file/d/1RZAqaMlVHX0D0D5Jl9Htv4Yw2Iu71oKL/view?usp=drive_link",
     },
     {
-      id: 9,
+      id: 10,
       title: "WHO: Life Expectancy Analysis",
       description: "Explored Kaggle’s Life Expectancy dataset to identify key factors and built a predictive model using Random Forest.",
       image: "/who.png",
@@ -91,7 +99,7 @@ export default function Projects() {
       presentation: "https://drive.google.com/file/d/1RqLpIodPB_9RtBsRE8nBtoPJvwVu_RHL/view?usp=drive_link",
     },
     {
-      id: 10,
+      id: 11,
       title: "News Category Classification",
       description: "Classifies Indonesian news articles using scraped data from Kompas, Pikiran Rakyat, Tribunnews, and Merdeka.",
       image: "/news.png",
@@ -100,7 +108,7 @@ export default function Projects() {
       presentation: "https://drive.google.com/file/d/1PpFHvyuq1-gPU9txAjYlxtERTlZZ-AF3/view?usp=drive_link",
     },
     {
-      id: 11,
+      id: 12,
       title: "Jakarta Air Quality Classification",
       description: "A model forecasting Jakarta’s air pollution to support government analysis of air quality factors.",
       image: "/airQuality.png",
@@ -109,7 +117,7 @@ export default function Projects() {
       presentation: "https://drive.google.com/file/d/1rCAdiJH55q8YvCvJYU86I8rAkAvTNzVz/view?usp=drive_link",
     },
     {
-      id: 12,
+      id: 13,
       title: "Diabetes Classification & Regression",
       description: "A model to classify diabetes outcome and predict pedigree function using key health indicators like glucose and pregnancies.",
       image: "/diabetes.png",
@@ -118,7 +126,7 @@ export default function Projects() {
       presentation: "https://drive.google.com/file/d/1rgQS1SwsuWpg_PU-A28jPQK9JGEGWEAn/view?usp=drive_link",
     },
     {
-      id: 13,
+      id: 14,
       title: "Telco Customer Churn Prediction",
       description: "Developed a predictive model to identify Telco customers likely to churn, helping reduce customer loss.",
       image: "/telco.png",
