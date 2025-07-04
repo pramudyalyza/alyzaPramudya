@@ -13,7 +13,7 @@ env.localModelPath = '/';
 env.allowRemoteModels = true;
 env.allowLocalModels = false;
 
-const MODEL_NAME = 'pramudyalyza/asktoal-model';
+const MODEL_NAME = 'pramudyalyza/asktoal-model-v2';
 
 interface Message {
   role: 'user' | 'model';
@@ -72,7 +72,7 @@ export default function ChatbotPage() {
     setMessages([
       {
         role: "model",
-        message: "Hey there! I'm AskToAl 👋🏻 I can help you explore Alyza's portfolio and background. What would you like to know?",
+        message: "Hey there! I'm AskToAl 👋🏻 I can help you explore Alyza's portfolio and background. Feel free to ask in English! What would you like to know?",
         timestamp: new Date().toISOString(),
       },
     ]);
@@ -94,7 +94,7 @@ export default function ChatbotPage() {
       if (!embedderInitialized) {
         try {
           const model = await pipeline('feature-extraction', MODEL_NAME, {
-            quantized: false,
+            quantized: true,
           });
           embedderRef.current = model;
           setEmbedderInitialized(true);
@@ -253,6 +253,7 @@ export default function ChatbotPage() {
               {/* Chat Header */}
               <div className="bg-primary text-primary-foreground p-4 flex items-center justify-between">
                 <div className="flex items-center">
+                  {loadingModel && <Loader2 className="h-5 w-5 animate-spin text-primary-foreground" />}
                   <h2 className="text-xl font-semibold">
                     AskToAl
                   </h2>
