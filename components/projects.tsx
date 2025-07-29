@@ -80,6 +80,16 @@ export default function Projects() {
     },
     {
       id: 8,
+      title: "RPA Loan Request",
+      description: "UiPath automation script that use REFramework to manage daily loan requests via dispatcher-performer setup, including handling queue handling, form, email, and file.",
+      image: "/loanRequest.jpg",
+      github: "https://github.com/pramudyalyza/RPA-Loan-Request",
+      demo: "https://drive.google.com/file/d/1fn9Q9gfAELSpt8k_pdhhuzN61Kf5Rg0a/view?usp=drive_link",
+      presentation: null,
+      category: "RPA",
+    },
+    {
+      id: 9,
       title: "RPA Nationality API",
       description: "UiPath automation script to predict top 3 nationalities for a list of names and records the results in Excel using the Nationalize.io API.",
       image: "/nationalityAPI.jpg",
@@ -89,7 +99,7 @@ export default function Projects() {
       category: "RPA",
     },
     {
-      id: 9,
+      id: 10,
       title: "RPA Invoice RegEx",
       description: "UiPath automation script to extract invoice number, customer ID, total amount, and due date from PDF files using regular expressions.",
       image: "/invoiceRegex.jpg",
@@ -99,7 +109,7 @@ export default function Projects() {
       category: "RPA",
     },
     {
-      id: 10,
+      id: 11,
       title: "RPA Web Scrapping",
       description: "UiPath automation script to scrape population data by age group and gender from the BPS website (2018 till 2025) and export it to CSV files.",
       image: "/webScrap.jpg",
@@ -109,7 +119,7 @@ export default function Projects() {
       category: "RPA",
     },
     {
-      id: 11,
+      id: 12,
       title: "RPA Excel and Email",
       description: "UiPath automation script to update monthly master data with the latest MTD figures, generate pivot reports, and email them to stakeholders.",
       image: "/excelEmail.jpg",
@@ -119,7 +129,7 @@ export default function Projects() {
       category: "RPA",
     },
     {
-      id: 12,
+      id: 13,
       title: "Frezz : Fruit Freshness Detector",
       description: "Frezz detects fruit freshness to assist farmers and supermarket staff in quality control, focusing on apples, bananas, and oranges.",
       image: "/frezz.png",
@@ -129,7 +139,7 @@ export default function Projects() {
       category: "AI & Data Science",
     },
     {
-      id: 13,
+      id: 14,
       title: "Covid-19 in US: Weather & Socioeconomic Factors",
       description: "Analyzed how weather and socioeconomic factors affect U.S. COVID-19 cases, supported by an interactive dashboard to visualize key insights.",
       image: "/covid.png",
@@ -139,7 +149,7 @@ export default function Projects() {
       category: "AI & Data Science",
     },
     {
-      id: 14,
+      id: 15,
       title: "Urban Visual Pollutants Detection",
       description: "Built a system to detect and classify urban visual pollutants in images, using a dataset featuring graffiti, faded signage, and more.",
       image: "/urban.png",
@@ -149,7 +159,7 @@ export default function Projects() {
       category: "AI & Data Science",
     },
     {
-      id: 15,
+      id: 16,
       title: "WHO: Life Expectancy Analysis",
       description: "Explored Kaggle’s Life Expectancy dataset to identify key factors and built a predictive model using Random Forest.",
       image: "/who.png",
@@ -159,7 +169,7 @@ export default function Projects() {
       category: "AI & Data Science",
     },
     {
-      id: 16,
+      id: 17,
       title: "News Category Classification",
       description: "Classifies Indonesian news articles using scraped data from Kompas, Pikiran Rakyat, Tribunnews, and Merdeka.",
       image: "/news.png",
@@ -169,7 +179,7 @@ export default function Projects() {
       category: "AI & Data Science",
     },
     {
-      id: 17,
+      id: 18,
       title: "Jakarta Air Quality Classification",
       description: "A model forecasting Jakarta’s air pollution to support government analysis of air quality factors.",
       image: "/airQuality.png",
@@ -179,7 +189,7 @@ export default function Projects() {
       category: "AI & Data Science",
     },
     {
-      id: 18,
+      id: 19,
       title: "Diabetes Classification & Regression",
       description: "A model to classify diabetes outcome and predict pedigree function using key health indicators like glucose and pregnancies.",
       image: "/diabetes.png",
@@ -189,7 +199,7 @@ export default function Projects() {
       category: "AI & Data Science",
     },
     {
-      id: 19,
+      id: 20,
       title: "Telco Customer Churn Prediction",
       description: "Developed a predictive model to identify Telco customers likely to churn, helping reduce customer loss.",
       image: "/telco.png",
